@@ -10,7 +10,7 @@ public class Task {
     private String name;
     private String description;
     private LocalDate deadline;
-    ObservableList<Task> tasks = FXCollections.observableArrayList();
+    private ObservableList<Task> tasks = FXCollections.observableArrayList();
     public Task(){}
     public Task(String name, String desc, LocalDate deadline){
         this.name = name;
@@ -34,10 +34,19 @@ public class Task {
     public String getName() {
         return name;
     }
+    public void setName(String name) {
+        this.name=name;
+    }
     public String getDescription() {
         return description;
     }
+    public void setDescription(String description) {
+        this.description=description;
+    }
     public LocalDate getDeadline() {
         return deadline;
+    }
+    public void setDeadline(LocalDate deadline) {
+        this.deadline=deadline;
     }
 }
