@@ -4,6 +4,15 @@ CREATE TABLE `to-do-list`.`task_list` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(45) NOT NULL,
-  `final_date` DATETIME NOT NULL,
+  `final_date` DATE NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+
+
+INSERT INTO `to-do-list`.`task_list` (`name`, `description`, `final_date`) VALUES ('new Task', 'desc', '2023.12.08')
+
+UPDATE `to-do-list`.`task_list` SET `name` = 'Ubrat', `description` = 'kakoe-to opisanie;', `final_date` = '2023-08-17' WHERE (`id` = '7')
+
+DELETE FROM `to-do-list`.`task_list` WHERE (`id` = '7')
+
+SELECT * FROM `to-do-list` WHERE name = 'sd' AND description = 'desc' AND final_date = '2023-08-17'
