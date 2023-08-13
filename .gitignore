@@ -36,4 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-src/main/java/com.example.todo/model/DatabaseConnection.java
+src/main/java/com/example/todo/model/DatabaseConnection.java
