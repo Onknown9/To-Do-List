@@ -93,7 +93,7 @@ public class HelloController {
         name_text.clear();
         desc_text.clear();
         deadline_date.setValue(null);
-
+        tasks_list.getSelectionModel().clearSelection();
         tasks_list.requestFocus(); //Place focus back on the list (stops focus glitch).
     }
     }
