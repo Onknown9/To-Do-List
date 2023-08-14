@@ -18,7 +18,7 @@ public class HelloController {
     @FXML
     private TextField name_text;
     @FXML
-    private TextField desc_text;
+    private TextArea desc_text;
     @FXML
     private DatePicker deadline_date;
     private ObservableList<Task> tasks = FXCollections.observableArrayList();
